@@ -23,4 +23,10 @@ e. Second way of doing it.
 ssh-copy-id your_username@your_server_ip_or_hostname
 ssh-copy-id wmbadmin@10.140.139.248
 
-f. 
+f. ---> Configure inventory file, call a command. 
+[wmbadmin@esb-poc-instance-1 ~]$ cat inv
+10.140.139.248
+[wmbadmin@esb-poc-instance-1 ~]$ ansible -i inv all -m "shell" -a "touch abc"
+10.140.139.248 | CHANGED | rc=0 >>
+
+[wmbadmin@esb-poc-instance-1 ~]$
