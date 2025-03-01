@@ -1,5 +1,11 @@
 js
 
+Commands to execute playbooks : 
+
+/usr/bin/ansible-playbook -i srvlist uninstall.yml
+/usr/bin/ansible-playbook -i srvlist Newuninstall.yml
+
+
 1. ansible --version
 2.
 
